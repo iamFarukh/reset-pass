@@ -105,8 +105,8 @@ const Button = (props) => (
 function App() {
   const [step, setStep] = useState("form");
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [password, setPassword] = useState("");
-  const [confirmPassword, setConfirmPassword] = useState("");
+  const [password, setPassword] = useState("12345678");
+  const [confirmPassword, setConfirmPassword] = useState("12345678");
 
   // Check if passwords match
   const passwordsMatch = password && password === confirmPassword;
