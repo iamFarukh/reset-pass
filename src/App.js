@@ -129,7 +129,7 @@ function App() {
 
   const handleRedirect = () => {
     // Redirect back to mobile app via deep link
-    window.location = "blsapp://login";
+    window.location.href = "blsapp://login";
   };
 
   // Inject keyframes into the document head
@@ -146,7 +146,7 @@ function App() {
       {/* State: Form */}
       {step === "form" && (
         <div style={styles.card}>
-          <h2 style={styles.title}>🔒 Reset Your Password</h2>
+          <h2 style={styles.title}>🔒 Reset Your Password manas bhai</h2>
           <form onSubmit={handleSubmit} style={styles.form}>
             <Input
               type="password"
@@ -166,7 +166,7 @@ function App() {
               disabled={isSubmitting}
             />
             <Button type="submit" disabled={!passwordsMatch || isSubmitting}>
-              {isSubmitting ? "Changing..." : "Change Password"}
+              {isSubmitting ? "Chang123" : "Change Password"}
             </Button>
             {!passwordsMatch && password && confirmPassword && (
               <p style={{ color: "red", fontSize: "0.9rem" }}>
