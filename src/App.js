@@ -129,7 +129,7 @@ function App() {
 
   const handleRedirect = () => {
     // Redirect back to mobile app via deep link
-    window.location.href = "blsapp://login";
+    window.location.href = "propstreamapp://open";
   };
 
   // Inject keyframes into the document head
